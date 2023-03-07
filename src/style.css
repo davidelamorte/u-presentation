@@ -28,7 +28,6 @@ html {
   padding-right: 10%;
 }
 .section div {
-  /* max-width: 50%; */
   font-size: 2.5vmin;
 }
 .section h1 {
@@ -71,8 +70,9 @@ section:nth-child(even) {
 
 @media only screen and (max-width: 1600px) {
   .section {
-    height: 30vh;
+    height: auto;
     align-items: flex-start;
+    margin-bottom: 30px;
   }
   .section .sub-section {
     flex-wrap: wrap;
@@ -86,5 +86,29 @@ section:nth-child(even) {
 
   canvas {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    padding: 0 7%;
+    display: block;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .section .sub-section {
+    display: block;
+  }
+  .section div {
+    font-size: 20px;
+  }
+  .section h1 {
+    font-size: 40px;
+  }
+  .section h2 {
+    font-size: 30px;
+  }
+  .section h2 small {
+    font-size: 20px;
   }
 }
